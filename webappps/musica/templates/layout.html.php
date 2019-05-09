@@ -9,13 +9,13 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Musica - Music Template</title>
+    <title><?=$title?></title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="img" href="../img/core-img/compact-disc.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 
@@ -23,7 +23,7 @@
     <!-- ##### Preloader ##### -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="circle-preloader">
-            <img src="img/core-img/compact-disc.png" alt="">
+            <img src="../img/core-img/compact-disc.png" alt="">
         </div>
     </div>
 
@@ -37,7 +37,7 @@
                     <nav class="classy-navbar justify-content-between" id="musicaNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="../img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -59,23 +59,24 @@
                                     <li><a href="#">Info</a>
                                         <ul class="dropdown">
 
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Terms &amp; Policy</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Location</a></li>
+                                            <li><a href="aboutus">About Us</a></li>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="term.html">Terms &amp; Policy</a></li>
+                                            <li><a href="http://maps.google.com/maps?q=27.6958807,85.3294043">Location</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Camera</a>
                                         <ul class="dropdown">
 
-                                            <li><a href="#">Cameras -></a>
+                                            <li><a href="#">Cameras</a>
                                             <ul class="dropdown">
 
                                             <li><a href="#">RED Camera</a></li>
                                             <li><a href="#">Arri Camera</a></li>
                                             <li><a href="#">Cannon</a></li>
                                             <li><a href="#">Sony</a></li>
+                                            <li><a href="#">GOPRO Hero 4</a></li>
+                                            <li><a href="#">DJI Phantom</a></li>
                                         </ul></li>
                                             <li><a href="#">Lense</a></li>
                                             <li><a href="#">Configuration Tool</a></li>
@@ -91,8 +92,6 @@
                                             <li><a href="#">Studio Charges</a></li>
                                         </ul>
                                     </li>
-
-                                    <li><a href="#">Gallery</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
@@ -116,8 +115,25 @@
     </header>
     <!-- ##### Header Area End ##### -->
 
+    <!-- ##### Hero Area Start ##### -->
 
-    <!-- ##### CTA Area End ##### -->
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### About Us Area Start ##### -->
+
+    <!-- ##### About Us Area End ##### -->
+    <?=$output?>
+    <!-- ##### Upcoming Shows Area Start ##### -->
+
+    <!-- ##### Upcoming Shows Area End ##### -->
+
+    <!-- ##### Music Player Area Start ##### -->
+
+    <!-- ##### Featured Album Area End ##### -->
+
+    <!-- ##### Music Artists Area Start ##### -->
+
+    <!-- ##### Music Artists Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0">
@@ -127,7 +143,7 @@
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="footer-widget-area mb-100">
-                        <a href="#"><img src="img/core-img/logo2.png" alt=""></a>
+                        <a href="#"><img src="../img/core-img/logo2.png" alt=""></a>
                         <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with  by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -196,7 +212,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </div>
                         <nav>
                             <ul class="footer-nav">
-                                <li>Anamnagar-31, Kathmandu</li>
+                                <li><a href=" http://maps.google.com/maps?q=27.6958807,85.3294043">Anamnagar-31, Kathmandu</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -208,15 +224,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="../js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="../js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <script src="../js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="../js/active.js"></script>
 </body>
 
 </html>
