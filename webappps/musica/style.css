@@ -938,7 +938,7 @@ img {
   .featured-shows-slides .owl-next {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-    background: #f3f3f3;
+    background: #000000;
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -956,8 +956,8 @@ img {
     .featured-shows-slides .owl-prev:hover,
     .featured-shows-slides .owl-next:hover {
       background: #cc1573;
-      background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-      background: linear-gradient(to right, #cc1573, #5722a9);
+      background: -webkit-linear-gradient(to right, #000000, #000000);
+      background: linear-gradient(to right, #000000, #000000);
       color: #ffffff; }
   .featured-shows-slides .owl-next {
     left: auto;
