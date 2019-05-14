@@ -7,9 +7,9 @@ require '../functions/tamplet_loader.php';
 session_start();
 
 if(isset($_GET['page'])){
-  require '../pages/'.$_GET['page'].'.php';
+  require '../pages/user/'.$_GET['page'].'.php';
 }else{
-  require '../pages/home.php';
+  require '../pages/user/home.php';
 }
 
 $criteria = [
@@ -17,5 +17,5 @@ $criteria = [
   'output' => $output
 ];
 
-echo tampletLoader('../templates/layout.html.php',$criteria);
+echo tampletLoader('../templates/user/layout.html.php',$criteria);
  ?>

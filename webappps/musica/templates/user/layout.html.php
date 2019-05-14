@@ -37,7 +37,7 @@
                     <nav class="classy-navbar justify-content-between" id="musicaNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="../img/core-img/logo.png" alt=""></a>
+                        <a href="index.php" class="nav-brand"><img src="../img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -55,14 +55,14 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.php">Home</a></li>
                                     <li><a href="#">Info</a>
                                         <ul class="dropdown">
 
-                                            <li><a href="aboutus">About Us</a></li>
-                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="about-us">About Us</a></li>
+                                            <li><a href="services">Services</a></li>
                                             <li><a href="term.html">Terms &amp; Policy</a></li>
-                                            <li><a href="http://maps.google.com/maps?q=27.6958807,85.3294043">Location</a></li>
+                                            <li><a href="http://maps.google.com/maps?q=27.6958807,85.3294043" target="_blank">Location</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Camera</a>
@@ -92,7 +92,7 @@
                                             <li><a href="#">Studio Charges</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact">Contact</a></li>
                                 </ul>
 
                                 <!-- Social Button -->
