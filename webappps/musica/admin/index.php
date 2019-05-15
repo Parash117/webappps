@@ -1,7 +1,9 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <?php
 require '../functions/tamplet_loader.php';
 require '../class/Database.php';
 require '../class/Table.php';
+
 //require '../class/database.php';
 //require '../class/furnitureAndCategory.php';
 //require '../class/table.php';

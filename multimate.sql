@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 15, 2019 at 09:30 PM
+-- Generation Time: May 15, 2019 at 10:32 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.17-1+ubuntu18.04.1+deb.sury.org+3
 
@@ -93,7 +93,28 @@ CREATE TABLE `product_0117` (
 
 INSERT INTO `product_0117` (`pid`, `pname`, `p_type`, `discription`) VALUES
 (1, 'digital cameras', 2, 'this is digital camera'),
-(5, 'red light', 1, 'this light glow red');
+(5, 'red light', 1, 'this light glow red'),
+(7, 'sofa', 1, 'out of context product');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_image`
+--
+
+CREATE TABLE `product_image` (
+  `image_id` int(11) NOT NULL,
+  `pid` int(11) NOT NULL,
+  `image_name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product_image`
+--
+
+INSERT INTO `product_image` (`image_id`, `pid`, `image_name`) VALUES
+(1, 7, 'proxy.duckduckgo.com.jpeg'),
+(2, 7, 'existing-network.jpg');
 
 -- --------------------------------------------------------
 
@@ -151,6 +172,13 @@ ALTER TABLE `product_0117`
   ADD KEY `p_type` (`p_type`);
 
 --
+-- Indexes for table `product_image`
+--
+ALTER TABLE `product_image`
+  ADD PRIMARY KEY (`image_id`),
+  ADD KEY `pid` (`pid`);
+
+--
 -- Indexes for table `user_117`
 --
 ALTER TABLE `user_117`
@@ -179,7 +207,12 @@ ALTER TABLE `picture_table`
 -- AUTO_INCREMENT for table `product_0117`
 --
 ALTER TABLE `product_0117`
-  MODIFY `pid` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pid` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT for table `product_image`
+--
+ALTER TABLE `product_image`
+  MODIFY `image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `user_117`
 --
@@ -200,6 +233,12 @@ ALTER TABLE `login_data`
 --
 ALTER TABLE `product_0117`
   ADD CONSTRAINT `product_0117_ibfk_1` FOREIGN KEY (`p_type`) REFERENCES `category` (`category_id`);
+
+--
+-- Constraints for table `product_image`
+--
+ALTER TABLE `product_image`
+  ADD CONSTRAINT `product_image_ibfk_1` FOREIGN KEY (`pid`) REFERENCES `product_0117` (`pid`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
