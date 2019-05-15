@@ -21,7 +21,6 @@ class Database{
     $valuesWithColon = implode(', :',$keys);
     $query = 'INSERT INTO '.$this->tablename.'('.$values.') VALUE(:'.
     $valuesWithColon.')';
-    echo $query;
     $stmt = $this->pdo->prepare($query);
     $stmt->execute($data);
   }
@@ -56,6 +55,7 @@ class Database{
       $delete->execute();
       return $delete;
     }
+
     function lastInsertId(){
       return $this->pdo->lastInsertId();
     }

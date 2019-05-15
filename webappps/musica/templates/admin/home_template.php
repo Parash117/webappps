@@ -1,4 +1,1 @@
-<?php
-echo "ADMIN HOMEPAGE";
-
-?>
+<a href="product">Products</a>
