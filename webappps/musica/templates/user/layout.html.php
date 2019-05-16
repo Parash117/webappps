@@ -61,7 +61,7 @@
 
                                             <li><a href="about-us">About Us</a></li>
                                             <li><a href="services">Services</a></li>
-                                            <li><a href="term.html">Terms &amp; Policy</a></li>
+                                            <li><a href="term">Terms &amp; Policy</a></li>
                                             <li><a href="http://maps.google.com/maps?q=27.6958807,85.3294043" target="_blank">Location</a></li>
                                         </ul>
                                     </li>
