@@ -92,6 +92,7 @@
                                             <li><a href="#">Studio Charges</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="rent">Order Rent</a></li>
                                     <li><a href="contact">Contact</a></li>
                                 </ul>
 

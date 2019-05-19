@@ -2,6 +2,11 @@
 <?php
 $product_images = new Database('product_image');
 $product_image = $product_images->find('pid', $product['pid']);
+//$pro_im = $product_image->fetch();
+$img = array();
+foreach($product_image as $pro){
+  array_push($img, $pro['image_name']);
+}
  ?>
 <div class="blog-area mt-30 section-padding-100">
     <div class="container">
@@ -13,17 +18,17 @@ $product_image = $product_images->find('pid', $product['pid']);
                     <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Post Thumb -->
                         <div class="blog-post-thumb mb-30">
-                            <img src="../uploads/images/" alt="">
+                            <img src="../uploads/images/<?php echo $img[1]; ?>" alt="" style="height: 600px;">
                         </div>
                         <!-- Post Title -->
                         <a href="#" class="post-title"><?php  echo $product['pname']; ?></a>
                         <!-- Post Meta -->
                         <div class="post-meta d-flex justify-content-between">
                             <div class="post-date">
-                                <p></p>
+                                <p>Category : <?php echo $product['p_type'];?></p>
                             </div>
                             <!-- Comments -->
-                            <p class="comments"><a href="#"></a><?php echo $product['p_type'];?></p>
+                            <p class="comments"><a href="#"></a></p>
                         </div>
                         <!-- bg gradients -->
                         <div class="bg-gradients mb-30 w-25"></div>
@@ -58,10 +63,10 @@ $product_image = $product_images->find('pid', $product['pid']);
         <div class="row">
             <div class="col-12">
                 <div class="featured-shows-slides owl-carousel">
-<?php foreach($product_image as $product_img){ ?>
+<?php foreach($img as $im){ ?>
                     <!-- Single Featured Shows -->
                     <div class="single-featured-shows">
-                        <img src="../uploads/images/<?php echo $product_img['image_name']; ?>" alt="">
+                        <img src="../uploads/images/<?php echo $im; ?>" alt="">
                         <!-- Content -->
 
                     </div>
