@@ -218,7 +218,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </nav>
                     </div>
                 </div>
-
+</div>
+</div>
                 <!-- Footer Widget Area -->
                    </footer>
     <!-- ##### Footer Area Start ##### -->

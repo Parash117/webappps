@@ -1,32 +1,10 @@
 <?php
   $categories = new Database('category');
   $category = $categories->findAll();
-  //$prod = $products->fetchAll();
-  $prod = array('light', 'grips', 'camera', 'screen', 'lens');
-  foreach ($product as $pro) {
-    if($pro['p_type']==1){
-      array_push($prod['light'], $pro['pname']);
-    }
-    elseif($pro['p_type']==2){
-      array_push($prod['grips'], $pro['pname']);
-    }
-    elseif($pro['p_type']==3){
-      array_push($prod['camera'], $pro['pname']);
-    }
-    elseif($pro['p_type']==4){
-      array_push($prod['screen'], $pro['pname']);
-    }
-    elseif($pro['p_type']==5){
-      array_push($prod['lens'], $pro['pname']);
-    }
-    else{
-
-    }
-  }
 ?>
 <style>
 table {
-  width:100%;
+ width: 20%;
 }
 table, th, td {
   border: 1px solid black;
@@ -61,24 +39,70 @@ table th {
          <div class="col-12">
 
  <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="300ms">
-   <table border="5">
-
+<?php foreach ($category as $cat): ?>
+   <table  style="width: 20%; float:left;">
      <tr>
-       <?php foreach ($category as $cat): ?>
          <th><?php echo $cat['category_name']; ?></th>
-       <?php endforeach; ?>
+     </tr>
+     </table>
+<?php endforeach; ?>
+         <table style="float: left;">
+           <?php foreach($lights as $light){?>
+                <tr>
+                  <td>
+                    <?php echo $light['pname']; ?>
+                  </td>
+                </tr>
+           <?php }?>
+         </table>
 
-     </tr>
-<?php foreach($prod as $pp){?>
-     <tr>
-       <?php foreach($pp as $key => $value){?>
-       <td>
-         <?php echo $value ?>
-       </td>
-     <?php }?>
-     </tr>
-<?php }?>
-   </table>
+         <table style="float: left;">
+           <?php foreach($grips as $grip){?>
+                <tr>
+                  <td>
+                    <?php echo $grip['pname']; ?>
+                  </td>
+                </tr>
+           <?php }?>
+         </table>
+
+         <table style="float: left;">
+           <?php foreach($cameras as $camera){?>
+                <tr>
+                  <td>
+                    <?php echo $camera['pname']; ?>
+                  </td>
+                </tr>
+           <?php }?>
+         </table>
+
+         <table style="float: left;">
+           <?php foreach($screens as $screen){?>
+                <tr>
+                  <td>
+                    <?php echo $screen['pname']; ?>
+                  </td>
+                </tr>
+           <?php }?>
+         </table>
+
+         <table style="float: left;">
+           <?php foreach($lens as $len){?>
+                <tr>
+                  <td>
+                    <?php echo $len['pname']; ?>
+                  </td>
+                </tr>
+           <?php }?>
+         </table>
+
+
+
+
+
+
+
+
 
 
  </div>
