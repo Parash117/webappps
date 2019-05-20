@@ -56,8 +56,8 @@ table th {
 <br><br>
 <h2>Camera:</h2>
 <table border="5"><tr>
-<?php for($i=0; $i<=count($camera);$i++){ ?>
-<td> <?php echo $camera[$i]; ?> </td>
+<?php end($camera); $key = key($camera); for($i=0; $i<=$key;$i++){ ?>
+ <?php if(isset($camera[$i])){echo '<td>'.$camera[$i].'</td>';}else{} ?>
 <?php } ?>
 </tr>
 </table>
