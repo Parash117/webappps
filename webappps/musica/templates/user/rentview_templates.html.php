@@ -60,18 +60,9 @@ table th {
            <?php }?>
          </table>
 <?php endforeach; ?>
-
-
-
-
-
-
-
-
-
  </div>
  </div>
  </div>
- <input type="submit" name="submit" class="btn">
+ <input type="submit" name="submit" class="btn" value="Book">
  </form>
  </div>
