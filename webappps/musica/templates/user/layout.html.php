@@ -1,3 +1,9 @@
+<?php
+  $products = new Database('product_0117');
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,12 +76,18 @@
                                                 <ul class="dropdown">
                                                     <li><a href="#">Camera</a>
                                                         <ul class="dropdown">
-                                                            <li><a href="#">RED EPIC</a></li>
+                                                            <?php $cameras = $products->find('p_type', 3);
+                                                                    foreach ( $cameras as $camera) {?>
+                                                            <li><a href="productview?pid=<?php echo $camera['pid'];?>"><?php echo $camera['pname']; ?></a></li>
+                                                              <?php }?>
                                                         </ul>
                                                     </li>
                                                     <li><a href="#"> LENS</a>
                                                         <ul class="dropdown">
-                                                            <li><a href="#"> ULTRA PRIME</a></li>
+                                                          <?php $lenses = $products->find('p_type', 5);
+                                                                  foreach ( $lenses as $lens) {?>
+                                                          <li><a href="productview?pid=<?php echo $lens['pid'];?>"><?php echo $lens['pname']; ?></a></li>
+                                                            <?php }?>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -83,13 +95,27 @@
 
                                             <li><a href="#">LIGHTS &amp; GRIPS</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="#">LIGHTS</a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="#">4K</a></li>
-                                                        </ul>
-                                                    </li>
+                                                  <li><a href="#"> LIGHTS</a>
+                                                      <ul class="dropdown">
+                                                        <?php $lights = $products->find('p_type', 1);
+                                                                foreach ( $lights as $light) {?>
+                                                        <li><a href="productview?pid=<?php echo $light['pid'];?>"><?php echo $light['pname']; ?></a></li>
+                                                          <?php }?>
+                                                      </ul>
+                                                  </li>
+                                                  <li><a href="#"> LIGHTS</a>
+                                                      <ul class="dropdown">
+                                                        <?php $grips = $products->find('p_type', 1);
+                                                                foreach ( $grips as $grip) {?>
+                                                        <li><a href="productview?pid=<?php echo $grip['pid'];?>"><?php echo $grip['pname']; ?></a></li>
+                                                          <?php }?>
+                                                      </ul>
+                                                  </li>
                                                 </ul>
                                             </li>
+                                                <li>
+                                                    <a href="#">POST PRODUCTION</a>
+                                                </li>
                                         </ul>
 
                                     </li>
