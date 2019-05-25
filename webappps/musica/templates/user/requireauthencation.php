@@ -57,6 +57,6 @@
         </div>
       </div>
     </div>
-    <script src="appcopy.js"></script>
+    <script src="../js/appcopy.js"></script>
 </body>
 </html>
