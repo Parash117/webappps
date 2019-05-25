@@ -1,7 +1,7 @@
 /* [Master Stylesheet - v1.0] */
 /* =========== Index of CSS ===========
 :: 1.0 Import Fonts
-:: 2.0 Import All CSS 
+:: 2.0 Import All CSS
 :: 3.0 Base CSS
     :: 3.1.0 Spacing
     :: 3.2.0 Height
@@ -410,7 +410,7 @@ img {
             font-size: 14px;
             padding: 0 10px; } }
         .header-area .musica-main-menu .classy-navbar .classynav ul li a:hover, .header-area .musica-main-menu .classy-navbar .classynav ul li a:focus {
-          color: #71100f ; } /*hover garda color change hune*/ 
+          color: #71100f ; } /*hover garda color change hune*/
 
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .header-area .musica-main-menu .classy-navbar .classynav ul li a {
@@ -420,7 +420,7 @@ img {
             background-color: #ffffff; } }
       .header-area .musica-main-menu .classy-navbar .classynav ul li.megamenu-item > a::after,
       .header-area .musica-main-menu .classy-navbar .classynav ul li.has-down > a::after {
-        color: #000000; }
+        color: #000000;}
       .header-area .musica-main-menu .classy-navbar .classynav ul li ul li a {
         color: #000000; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1476,7 +1476,7 @@ img {
       font-size: 12px;
       font-weight: 500; }
       .footer-area .footer-widget-area .copywrite-text a:hover, .footer-area .footer-widget-area .copywrite-text a:focus {
-        color: #bd177a; }
+        color: #000000; }
   .footer-area .footer-widget-area .widget-title h4 {
     font-size: 24px;
     font-weight: 900;
@@ -1493,7 +1493,7 @@ img {
       margin-bottom: 15px;
       font-weight: 600; }
       .footer-area .footer-widget-area .footer-nav li a:hover, .footer-area .footer-widget-area .footer-nav li a:focus {
-        color: #bd177a; }
+        color: #000000; }
     .footer-area .footer-widget-area .footer-nav li:last-child a {
       margin-bottom: 0; }
   .footer-area .footer-widget-area .subscribe-form {

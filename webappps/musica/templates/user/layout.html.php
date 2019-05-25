@@ -55,45 +55,49 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="#">Info</a>
-                                        <ul class="dropdown">
-
-                                            <li><a href="about-us">About Us</a></li>
-                                            <li><a href="services">Services</a></li>
-                                            <li><a href="term">Terms &amp; Policy</a></li>
-                                            <li><a href="http://maps.google.com/maps?q=27.6958807,85.3294043" target="_blank">Location</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Camera</a>
-                                        <ul class="dropdown">
-
-                                            <li><a href="#">Cameras</a>
-                                            <ul class="dropdown">
-
-                                            <li><a href="#">RED Camera</a></li>
-                                            <li><a href="#">Arri Camera</a></li>
-                                            <li><a href="#">Cannon</a></li>
-                                            <li><a href="#">Sony</a></li>
-                                            <li><a href="#">GOPRO Hero 4</a></li>
-                                            <li><a href="#">DJI Phantom</a></li>
-                                        </ul></li>
-                                            <li><a href="#">Lense</a></li>
-                                            <li><a href="#">Configuration Tool</a></li>
-
-                                        </ul>
+                                    <li><a href="index.php">HOME</a>
+                                      <ul class="dropdown">
+                                        <li><a href="term">TERMS</a></li>
+                                        <li><a href="http://maps.google.com/maps?q=27.6958807,85.3294043" target="_blank">LOCATION</a></li>
+                                      </ul>
                                     </li>
 
-                                    <li><a href="#">Studio</a>
-                                        <ul class="dropdown">
 
-                                            <li><a href="#">Dubbing Studio</a></li>
-                                            <li><a href="#">Post Production</a></li>
-                                            <li><a href="#">Studio Charges</a></li>
+
+                                    <li><a href="Services">SERVICES</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">CAMERAS &amp; LENS</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">Camera</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="#">RED EPIC</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#"> LENS</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="#"> ULTRA PRIME</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="#">LIGHTS &amp; GRIPS</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">LIGHTS</a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="#">4K</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </ul>
+
                                     </li>
-                                    <li><a href="rent">Order Rent</a></li>
-                                    <li><a href="contact">Contact</a></li>
+
+
+                                    <li><a href="rent">OREDER RENT</a></li>
+                                    <li><a href="about-us">ABOUT US</a></li>
+                                    <li><a href="contact">CONTACT</a></li>
                                 </ul>
 
                                 <!-- Social Button -->
@@ -146,7 +150,7 @@
                     <div class="footer-widget-area mb-100">
                         <a href="#"><img src="../img/core-img/logo2.png" alt=""></a>
                         <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with  by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <a href="https://colorlib.com" target="_blank"></a><a href="htpp://www.camerarental.com">MULTI MATTE</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
                     </div>

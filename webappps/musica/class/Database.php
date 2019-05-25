@@ -3,7 +3,7 @@ class Database{
   public $tablename;
   function __construct($tablename){
     $this->tablename = $tablename;
-    $this->pdo=new PDO('mysql:host=localhost;dbname=multimate;charset=utf8','santosh','MysqlkoPass.99',
+    $this->pdo=new PDO('mysql:host=localhost;dbname=multimatte;charset=utf8','root','',
 		array(PDO::ATTR_EMULATE_PREPARES => false, PDO::  ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
   }
   function save($record, $pk = ''){
@@ -14,7 +14,7 @@ class Database{
 	        $this->update($record, $pk);
 	    }
 	}
-
+//spine
   function insert($data){
     $keys = array_keys($data);
     $values = implode(', ', $keys);

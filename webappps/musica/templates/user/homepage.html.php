@@ -56,8 +56,8 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading">
-                    <h2>Currently Running</h2>
-                    <h6 style="color: #000000">We have the following task running in our office.</h6>
+                    <h2>Hot Arrivals</h2>
+                    <h6 style="color: #000000"></h6>
                 </div>
             </div>
         </div>
