@@ -42,61 +42,36 @@
             <div class="col-12">
                 <!-- Upcoming Shows Content -->
                 <div class="upcoming-shows-content">
-
+<?php foreach($hots as $hot){?>
                     <!-- Single Upcoming Shows -->
                     <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                         <div class="shows-date">
-                            <h2>3 <span>May</span></h2>
+                            <h2><?php $date = $hot['hdate']; echo date("d",strtotime($date)); ?> <span><?php echo date("m",strtotime($date)); ?></span></h2>
                         </div>
                         <div class="shows-desc d-flex align-items-center">
                             <div class="shows-img">
-                                <img src="../img/bg-img/dbt.jpg" alt="">
+                                <img src="../uploads/hotarrivals/<?php echo $hot['image']; ?>" alt="">
                             </div>
                             <div class="shows-name">
-                                <h6>Release of Dal Vat Tarkari</h6>
+                                <h6><?php echo $hot['title'] ?></h6>
                                 <p></p>
                             </div>
                         </div>
                         <div class="shows-location">
-                            <p>At the Castle</p>
+                            <p></p>
                         </div>
                         <div class="shows-time">
-                            <p>20:30</p>
+                            <p><?php echo $hot['hdate']; ?></p>
                         </div>
-                        <div class="buy-tickets">
+                        <!--<div class="buy-tickets">
                             <a href="#" class="btn musica-btn">View Details</a>
                         </div>
-                    </div>
-
-                    <!-- Single Upcoming Shows -->
-                    <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                        <div class="shows-date">
-                            <h2>4 <span>May</span></h2>
-                        </div>
-                        <div class="shows-desc d-flex align-items-center">
-                            <div class="shows-img">
-                                <img src="../img/bg-img/dbt.jpg" alt="">
-                            </div>
-                            <div class="shows-name">
-                                <h6>Check Ticket Bookings</h6>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="shows-location">
-                            <p>Main Stadium</p>
-                        </div>
-                        <div class="shows-time">
-                            <p>21:30</p>
-                        </div>
-                        <div class="buy-tickets">
-                            <a href="#" class="btn musica-btn">View Details</a>
-                        </div>
-                    </div>
-
-                    <!-- Single Upcoming Shows -->
+                    </div>-->
+<?php } ?>
 
 
                     <!-- Single Upcoming Shows -->
+
 
 
                 </div>
