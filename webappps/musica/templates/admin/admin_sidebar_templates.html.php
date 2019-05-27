@@ -9,7 +9,7 @@
     <li><a href="addwork">Add in Our Work</a></li>
     <li><a href="work">Edit Our Work</a></li>
     <li><a href="addhotarrival">Add Hot Arrivals</li>
-    <li><a href="edithotarrival">Edit Hot Arrivals</li>
+    <li><a href="edithotarrival">Edit Hot Arrivals</a></li>
   </ul>
 </section>
 </div>
