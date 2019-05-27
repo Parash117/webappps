@@ -1,6 +1,5 @@
 <?php
 $title = 'MULTI MATTE - Films &amp; Recordings';
-
 $productlist = new Database('product_0117');
 $products = $productlist->find('p_type', $_GET[cpid]);
 //$products->fetch();
