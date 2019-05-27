@@ -26,7 +26,7 @@ table th {
 </style>
 <?php
 $table = new Table();
-$table->setHeading(['Name','<style="width: 10%">Descripton','Type','<style="width: 5%">&nbsp;','<style="width: 5%">&nbsp;']);
+$table->setHeading(['Name','<style="width: 10%">Image','Option']);
 foreach ($covers as $row) {
   $row['image']='<img src="../uploads/cover_image/'.$row['cover_img'].'" style="height:200px;width:300px;"></img>';
   unset($row['cover_img']);

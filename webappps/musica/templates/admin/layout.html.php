@@ -11,20 +11,16 @@
 
 		</section>
 	</header>
-	<nav>
 
-	</nav>
-<img src=""/>
-	<main class="admin" id="admin">
-	<section class="left">
-		<?php
+	<main class="admin" id="admin" style="margin-top: 20px;">
+
+<div class="container" style="padding-top: 50px; padding-left: 20%;">
+<?php
 		if (isset($_SESSION['admin_loggedin'])) {
 			include 'admin_sidebar_templates.html.php';
 		}
 		?>
-</section>
 
-	<section class="right">
 
 
 	<?php
@@ -37,8 +33,7 @@
 
 		}
 	?>
-
-</section>
+</div>
 	</main>
 
 </body>

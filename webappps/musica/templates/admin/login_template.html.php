@@ -68,10 +68,10 @@ label{
 
 <div class='adminloginform'>
 <form method="post" action="">
-<label> Email </label><br>
+<label> USERNAME: </label><br>
 <input type="text" name="username"/><br>
-<label>password </label><br>
+<label>PASSWORD: </label><br>
 <input type="password" name="password"/><br>
-<input type="submit" name="admin_login" value="LOGIN"/>
+<input type="submit" name="admin_login" value="LOGIN" style="margin-left: 28%; margin-top:20px;"/>
 </form>
 </div>

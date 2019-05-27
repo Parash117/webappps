@@ -103,9 +103,9 @@
                                                           <?php }?>
                                                       </ul>
                                                   </li>
-                                                  <li><a href="#"> LIGHTS</a>
+                                                  <li><a href="#"> GRIPS</a>
                                                       <ul class="dropdown">
-                                                        <?php $grips = $products->find('p_type', 1);
+                                                        <?php $grips = $products->find('p_type', 2);
                                                                 foreach ( $grips as $grip) {?>
                                                         <li><a href="productview?pid=<?php echo $grip['pid'];?>"><?php echo $grip['pname']; ?></a></li>
                                                           <?php }?>
@@ -115,6 +115,11 @@
                                             </li>
                                                 <li>
                                                     <a href="#">POST PRODUCTION</a>
+                                                        <ul class="dropdown">
+                                                          <li><a href="#">COLOR CORRECTION</a></li>
+                                                          <li><a href="#">MULTI-EDITING SUIT</a></li>
+                                                          <li><a href="#">DUBBING</a></li>
+                                                        </ul>
                                                 </li>
                                         </ul>
 

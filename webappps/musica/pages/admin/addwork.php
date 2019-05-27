@@ -1,7 +1,7 @@
 <?php
-$cover=new Database('cover_img');
 $title="Admin Home";
-if(isset($_POST['addCover'])){
+$work=new Database('work');
+if(isset($_POST['addwork'])){
   foreach ($_FILES["images"]["tmp_name"] as $key=>$tmp_name) {
     $file_name=$_FILES["images"]["name"][$key];
     $file_tmp=$_FILES["images"]["tmp_name"][$key];
@@ -9,22 +9,22 @@ if(isset($_POST['addCover'])){
     $extension=array("jpeg","jpg","png","gif");
     if(in_array($ext,$extension)){
       $name=$file_name;
-      if(!file_exists("../uploads/cover_image/".$file_name)){
-        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../uploads/cover_image/".$file_name);
+      if(!file_exists("../uploads/work/".$file_name)){
+        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../uploads/work/".$file_name);
       }
       else{
         $filename=basename($file_name,$ext);
         $name=$filename.time().".".$ext;
-        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../uploads/cover_image/".$name);
+        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../uploads/work/".$name);
       }
       $cri=[
         'title'=>$_POST['title'],
-        'cover_img'=>$name
+        'link'=>$_POST['link'],
+        'image'=>$name
       ];
-      $cover->insert($cri);
+      $work->insert($cri);
     }
   }
 }
-$output=tampletLoader('../templates/admin/addcover_template.html.php',[]);
-
-?>
+$output=tampletLoader('../templates/admin/addwork_template.html.php',[]);
+ ?>

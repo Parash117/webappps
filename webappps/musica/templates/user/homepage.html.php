@@ -1,44 +1,20 @@
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
 
+<?php foreach($ci as $coverimg){?>
         <!-- Single Hero Slide -->
         <div class="single-hero-slide d-flex align-items-center justify-content-center">
             <!-- Slide Img -->
-            <div class="slide-img bg-img" style="background-image: url(../img/bg-img/1.jpg);"></div>
+            <div class="slide-img bg-img" style="background-image: url(../uploads/cover_image/<?php echo $coverimg['cover_img'];?>);"></div>
             <!-- Slide Content -->
             <div class="hero-slides-content text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">Post Production <span><!--text also here--></span></h2>
-                <p data-animation="fadeInUp" data-delay="300ms">Polished Product</p>
+                <h2 data-animation="fadeInUp" data-delay="100ms"><span><!--text also here--></span></h2>
+                <p data-animation="fadeInUp" data-delay="300ms"></p>
             </div>
             <!-- Big Text -->
             <h2 class="big-text">Multi Matte</h2>
         </div>
-
-        <!-- Single Hero Slide -->
-        <div class="single-hero-slide d-flex align-items-center justify-content-center">
-            <!-- Slide Img -->
-            <div class="slide-img bg-img" style="background-image: url(../img/bg-img/2.jpg);"></div>
-            <!-- Slide Content -->
-            <div class="hero-slides-content text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">Audio Recording Studio<span><!--text also here--></span></h2>
-                <p data-animation="fadeInUp" data-delay="300ms">5.1 CH record</p>
-            </div>
-            <!-- Big Text -->
-            <h2 class="big-text">Multi Matt</h2>
-        </div>
-
-        <!-- Single Hero Slide -->
-        <div class="single-hero-slide d-flex align-items-center justify-content-center">
-            <!-- Slide Img -->
-            <div class="slide-img bg-img" style="background-image: url(../img/bg-img/3.jpg);"><!--text also here--></div>
-            <!-- Slide Content -->
-            <div class="hero-slides-content text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">Camera Rent <span><!--text also here--></span></h2>
-                <p data-animation="fadeInUp" data-delay="300ms">Rent camera and accessories</p>
-            </div>
-            <!-- Big Text -->
-            <h2 class="big-text">Multi Matte</h2>
-        </div>
+<?php }?>
 
     </div>
     <!-- bg gradients -->
@@ -128,3 +104,122 @@
         </div>
     </div>
 </div>
+<!-- ##### Discography Area Start ##### -->
+<div class="discography-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading dark">
+                    <h3>Our Work</h3>
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- Discography Slides -->
+                <div class="discography-slides owl-carousel">
+                    <!-- Single Discography -->
+                    <div class="single-discography">
+                        <a href="#"><img src="../img/bg-img/dbt.jpg" alt=""></a>
+                    </div>
+
+                    <!-- Single Discography -->
+                    <div class="single-discography">
+                        <a href="#"><img src="../img/bg-img/satrugate.jpg" alt=""></a>
+                    </div>
+
+                    <!-- Single Discography -->
+                    <div class="single-discography">
+                        <a href="#"><img src="../img/bg-img/prasad.jpg" alt=""></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Discography Area End ##### -->
+
+<!-- ##### Featured Shows Area Start ##### -->
+<div class="featured-shows-area section-padding-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="section-heading dark">
+                    <h3>Our Services</h3>
+                    <h6></h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="featured-shows-slides owl-carousel">
+
+                    <!-- Single Featured Shows -->
+                    <div class="single-featured-shows">
+                        <img src="../img/bg-img/3.jpg" alt="">
+                        <!-- Content -->
+                        <div class="featured-shows-content">
+                            <div class="shows-text">
+                                <h4>Camera Rental</h4>
+                                <p></p>
+                                <a href="#" class="buy-tickets-btn">See more..</a>
+                            </div>
+                            <div class="bg-gradients"></div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Shows -->
+                    <div class="single-featured-shows">
+                        <img src="../img/services-pic/lens.png" alt="">
+                        <!-- Content -->
+                        <div class="featured-shows-content">
+                            <div class="shows-text">
+                                <h4>Lens Rental</h4>
+                                <p></p>
+                                <a href="#" class="buy-tickets-btn">See more..</a>
+                            </div>
+                            <div class="bg-gradients"></div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Shows -->
+                    <div class="single-featured-shows">
+                        <img src="../img/bg-img/2.jpg" alt="">
+                        <!-- Content -->
+                        <div class="featured-shows-content">
+                            <div class="shows-text">
+                                <h4>Dubbing Studio</h4>
+                                <p></p>
+                                <a href="#" class="buy-tickets-btn">See more..</a>
+                            </div>
+                            <div class="bg-gradients"></div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Shows -->
+                    <div class="single-featured-shows">
+                        <img src="../img/services-pic/light.jpg" alt="">
+                        <!-- Content -->
+                        <div class="featured-shows-content">
+                            <div class="shows-text">
+                                <h4>Light Rentals</h4>
+                                <p></p>
+                                <a href="#" class="buy-tickets-btn">See more..</a>
+                            </div>
+                            <div class="bg-gradients"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Featured Shows Area End ##### -->
