@@ -7,7 +7,7 @@
     <li><a href="addCover">Add Cover Photos</a></li>
     <li><a href="cover">Edit Cover</a></li>
     <li><a href="addwork">Add in Our Work</a></li>
-    <li><a href="editwork">Edit Our Work</a></li> 
+    <li><a href="work">Edit Our Work</a></li> 
   </ul>
 </section>
 </div>

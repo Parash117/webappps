@@ -1,12 +1,41 @@
-<h2> Add Work</h2>
 
-<form method="post" action="" enctype="multipart/form-data">
-<input type="hidden" name="pid" value="<?php if(isset($row['pid'])){echo $row['pid'];}?>">
-<label> Title</label><br>
-<input type="text" name="title" value="<?php if(isset($row['title'])){echo $row['title'];}?>"><br>
-<label> Link</label><br>
-<input type="text" name="link" value="<?php if(isset($row['link'])){echo $row['link'];}?>"><br>
-<label>Image</label><br>
-<input type="file" name="images[]" class="upload" /><br>
-<input type="submit" name="addwork" value="Submit" id="submit">
-</form>
+<style>
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+ background-color: #fff;
+}
+table th {
+  background-color: black;
+  color: white;
+}
+</style>
+</style>
+<?php
+$table = new Table();
+$table->setHeading(['Name','link','<style="width: 10%">Image','Option']);
+foreach ($works as $row) {
+  $row['images']='<img src="../uploads/work/'.$row['image'].'" style="height:200px;width:300px;"></img>';
+  unset($row['image']);
+  $row['delete']='<form method="post" action="">
+  <input type="hidden" name="id" value=' . $row['work_id'] . ' />
+  <input type="submit" name="delete" value="Delete" />
+  </form>';
+  unset($row['work_id']);
+  $table->addRow($row);
+}
+echo $table->getHTML();
+?>
