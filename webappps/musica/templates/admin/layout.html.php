@@ -12,9 +12,8 @@
 		</section>
 	</header>
 
-	<main class="admin" id="admin" style="margin-top: 20px;">
+	<main class="admin" id="admin">
 
-<div class="container" style="padding-top: 50px; padding-left: 20%;">
 <?php
 		if (isset($_SESSION['admin_loggedin'])) {
 			include 'admin_sidebar_templates.html.php';
@@ -22,7 +21,7 @@
 		?>
 
 
-
+<section class="right">
 	<?php
 		if (isset($_SESSION['admin_loggedin'])) {
       echo $output;
@@ -33,7 +32,7 @@
 
 		}
 	?>
-</div>
+</section>
 	</main>
 
 </body>

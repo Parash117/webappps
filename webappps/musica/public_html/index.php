@@ -1,10 +1,7 @@
 <?php
+session_start();
 require '../functions/tamplet_loader.php';
 require '../class/Database.php';
-//require '../class/furnitureAndCategory.php';
-//require '../class/table.php';
-//require '../functions/categoryTest.php';
-session_start();
 
 if(isset($_GET['page'])){
   require '../pages/user/'.$_GET['page'].'.php';
