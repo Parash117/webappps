@@ -16,12 +16,13 @@
 	</nav>
 <img src=""/>
 	<main class="admin" id="admin">
+	<section class="left">
 		<?php
 		if (isset($_SESSION['admin_loggedin'])) {
 			include 'admin_sidebar_templates.html.php';
 		}
 		?>
-
+</section>
 
 	<section class="right">
 
