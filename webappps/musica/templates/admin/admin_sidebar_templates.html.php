@@ -6,8 +6,10 @@
     <li><a href="cover">Edit Cover</a></li>
     <li><a href="addwork">Add in Our Work</a></li>
     <li><a href="work">Edit Our Work</a></li>
-    <li><a href="addhotarrival">Add Hot Arrivals</li>
-    <li><a href="edithotarrival">Edit Hot Arrivals</li>
+    <li><a href="addhotarrival">Add Hot Arrivals</a></li>
+    <li><a href="edithotarrival">Edit Hot Arrivals</a></li>
+    <li><a href="newrent">New Rent</a></li>
+    <li><a href="oldrent">Old Rent</a></li>
   </ul>
 </section>
 

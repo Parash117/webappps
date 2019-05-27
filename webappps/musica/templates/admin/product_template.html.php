@@ -1,6 +1,5 @@
 
 <style>
-<style>
 table {
   width:100%;
 }
@@ -22,7 +21,6 @@ table th {
   background-color: black;
   color: white;
 }
-</style>
 </style>
 <?php
 $categoryTable=new Database('category');
