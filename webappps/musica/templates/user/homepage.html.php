@@ -120,21 +120,16 @@
             <div class="col-12">
                 <!-- Discography Slides -->
                 <div class="discography-slides owl-carousel">
-                    <!-- Single Discography -->
-                    <div class="single-discography">
-                        <a href="#"><img src="../img/bg-img/dbt.jpg" alt=""></a>
-                    </div>
+
+                  <?php foreach ($works as $work) {?>
 
                     <!-- Single Discography -->
                     <div class="single-discography">
-                        <a href="#"><img src="../img/bg-img/satrugate.jpg" alt=""></a>
+                        <a href="<?php echo $work['link']; ?>"><img src="../uploads/work/<?php echo $work['image']; ?>" alt=""></a>
                     </div>
 
-                    <!-- Single Discography -->
-                    <div class="single-discography">
-                        <a href="#"><img src="../img/bg-img/prasad.jpg" alt=""></a>
-                    </div>
 
+                  <?php }?>
 
                 </div>
             </div>
