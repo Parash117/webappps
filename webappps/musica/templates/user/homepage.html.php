@@ -184,7 +184,7 @@ padding-left: 0;
                             <div class="shows-text">
                                 <h4>Dubbing Studio</h4>
                                 <p></p>
-                                <a href="#" class="buy-tickets-btn">See more..</a>
+                                <a href="dubbing" class="buy-tickets-btn">See more..</a>
                             </div>
                             <div class="bg-gradients"></div>
                         </div>
@@ -226,7 +226,7 @@ padding-left: 0;
                             <div class="shows-text">
                                 <h4>Multi Suit Editing</h4>
                                 <p></p>
-                                <a href="#" class="buy-tickets-btn">See more..</a>
+                                <a href="multiedit" class="buy-tickets-btn">See more..</a>
                             </div>
                             <div class="bg-gradients"></div>
                         </div>
