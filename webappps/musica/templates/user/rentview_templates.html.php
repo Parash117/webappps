@@ -2,6 +2,11 @@
   $categories = new Database('category');
   $category = $categories->findAll();
   $productlist = new Database('product_0117');
+  if(isset($_SESSION['order'])){
+    $orders=explode(",",$_SESSION['order']);
+  }else{
+    $orders=[];
+  }
 ?>
 <style>
 table {
@@ -72,7 +77,7 @@ table th {
                 <tr>
                   <td>
                     <?php echo $light['pname']; ?>
-                    <input type="checkbox" id="<?php echo $light['pid'];?>" name="<?php echo $light['pid'];?>" onclick="check('<?php echo $light['pid'];?>')" value="<?php echo $light['pid']; ?>">
+                    <input type="checkbox" id="<?php echo $light['pid'];?>" name="<?php echo $light['pid'];?>" onclick="check('<?php echo $light['pid'];?>')" value="<?php echo $light['pid']; ?>" <?php if(in_array($light['pid'],$orders)){echo "checked";}?>>
                   </td>
                 </tr>
            <?php }?>
