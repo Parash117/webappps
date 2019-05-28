@@ -9,5 +9,5 @@ if(isset($_POST['submit'])){
 $orders = $rentTable->find('rent_id',$_GET['id']);
 $order=$orders->fetch();
 $title="Admin Home";
-$output=tampletLoader('../templates/admin/vieworder.html.php',['order'=>$order]);
+$output=tampletLoader('../../templates/admin/vieworder.html.php',['order'=>$order]);
  ?>

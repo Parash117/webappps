@@ -5,5 +5,5 @@ if(isset($_POST['delete'])){
   $hot->delete('haid',$_POST['id']);
 }
 $hots=$hot->findAll();
-$output=tampletLoader('../templates/admin/hotarrival_template.html.php',['hot'=>$hots]);
+$output=tampletLoader('../../templates/admin/hotarrival_template.html.php',['hot'=>$hots]);
  ?>

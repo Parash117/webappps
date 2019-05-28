@@ -5,5 +5,5 @@ if(isset($_POST['delete'])){
   $covers->delete('cover_id',$_POST['id']);
 }
 $cover=$covers->findAll();
-$output=tampletLoader('../templates/admin/cover_template.html.php',['covers'=>$cover]);
+$output=tampletLoader('../../templates/admin/cover_template.html.php',['covers'=>$cover]);
  ?>

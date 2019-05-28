@@ -5,5 +5,5 @@
     $works->delete('work_id',$_POST['id']);
   }
   $work=$works->findAll();
-  $output=tampletLoader('../templates/admin/work_template.html.php',['works'=>$work]);
+  $output=tampletLoader('../../templates/admin/work_template.html.php',['works'=>$work]);
    ?>

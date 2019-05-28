@@ -9,13 +9,13 @@ if(isset($_POST['addwork'])){
     $extension=array("jpeg","jpg","png","gif");
     if(in_array($ext,$extension)){
       $name=$file_name;
-      if(!file_exists("../uploads/work/".$file_name)){
-        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../uploads/work/".$file_name);
+      if(!file_exists("../../uploads/work/".$file_name)){
+        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../../uploads/work/".$file_name);
       }
       else{
         $filename=basename($file_name,$ext);
         $name=$filename.time().".".$ext;
-        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../uploads/work/".$name);
+        move_uploaded_file($file_tmp=$_FILES["images"]["tmp_name"][$key],"../../uploads/work/".$name);
       }
       $cri=[
         'title'=>$_POST['title'],
@@ -26,5 +26,5 @@ if(isset($_POST['addwork'])){
     }
   }
 }
-$output=tampletLoader('../templates/admin/addwork_template.html.php',[]);
+$output=tampletLoader('../../templates/admin/addwork_template.html.php',[]);
  ?>

@@ -20,6 +20,6 @@ if(isset($_POST['admin_login'])){
 
 
 }
-$output=tampletLoader('../templates/admin/login_template.html.php',[]);
+$output=tampletLoader('../../templates/admin/login_template.html.php',[]);
 $title="Admin Login";
  ?>
