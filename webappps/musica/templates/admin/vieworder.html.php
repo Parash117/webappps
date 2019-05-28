@@ -13,7 +13,8 @@
         }
     }
 ?>
-
+<h3>Date Requested:</h3><?php echo $order['date_from']." to ".$order['date_to']?><br><br>
+<h3>Order In:</h3><?php echo $order['date_booked']?>
 <?php if($order['seen']==0){ 
     ?>
 

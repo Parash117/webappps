@@ -18,6 +18,8 @@
             <form action="" method="POST">
                 <label> Name:</label>
                 <input type="text" name="username" placeholder="Enter Your Name">
+                <input type="date" name="date_from">
+                <input type="date" name="date_to">
                 <input type="submit" name="book" value="BOOK">
 
 </form>
