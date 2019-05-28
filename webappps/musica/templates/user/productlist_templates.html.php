@@ -1,3 +1,7 @@
+<?php
+$productimage = new Database('product_image');
+
+?>
 <!-- ##### Header Area End ##### -->
 <div class="breadcumb-area bg-img bg-overlay2" style="height: 45px;">
 <div class="bradcumbContent">
@@ -30,7 +34,9 @@
                             </div>
                             <div class="shows-desc d-flex align-items-center">
                                 <div class="shows-img">
-                                    <img src="img/services-pic/red_cam.png" alt="">
+                                <?php $pimage = $productimage->find('pid', $product['pid']);
+                                      $pimage = $pimage->fetch(); ?>
+                                    <img src="../uploads/images/<?php echo $pimage['image_name']; ?>" style="margin-left: -30px; height: 100px; width:200px;" alt="">
                                 </div>
                                 <div class="shows-name">
                                     <h6> <?php echo $product['pname']; ?></h6>
