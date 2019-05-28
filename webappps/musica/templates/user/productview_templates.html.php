@@ -78,4 +78,17 @@ foreach($product_image as $pro){
         </div>
     </div>
 </div>
+<div class="container">
+
+<div class="buy-tickets" style="-webkit-box-flex: 0;
+-ms-flex: 80% 80% 50%;
+flex: 80% 20% 50%;
+max-width: 50%;
+width: 50%;
+margin-bottom: 30px;
+text-align: center;">
+    <a href="#" class="btn musica-btn" style="margin-left:70%; width: 300px;text-align:center;">View Details</a>
+</div>
+</div>
+
 <!-- ##### Featured Shows Area End ##### -->
