@@ -27,58 +27,6 @@
     </div>
 </section>
 
-<div class="upcoming-shows-area section-padding-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-heading">
-                    <h2>Hot Arrivals</h2>
-                    <h6 style="color: #000000"></h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <!-- Upcoming Shows Content -->
-                <div class="upcoming-shows-content">
-<?php foreach($hots as $hot){?>
-                    <!-- Single Upcoming Shows -->
-                    <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                        <div class="shows-date">
-                            <h2><?php $date = $hot['hdate']; echo date("d",strtotime($date)); ?> <span><?php echo date("m",strtotime($date)); ?></span></h2>
-                        </div>
-                        <div class="shows-desc d-flex align-items-center">
-                            <div class="shows-img">
-                                <img src="../uploads/hotarrivals/<?php echo $hot['image']; ?>" alt="">
-                            </div>
-                            <div class="shows-name">
-                                <h6><?php echo $hot['title'] ?></h6>
-                                <p></p>
-                            </div>
-                        </div>
-                        <div class="shows-location">
-                            <p></p>
-                        </div>
-                        <div class="shows-time">
-                            <p><?php echo $hot['hdate']; ?></p>
-                        </div>
-                        <!--<div class="buy-tickets">
-                            <a href="#" class="btn musica-btn">View Details</a>
-                        </div>
-                    </div>-->
-<?php } ?>
-
-
-                    <!-- Single Upcoming Shows -->
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- ##### Discography Area Start ##### -->
 <div class="discography-area section-padding-100">
     <div class="container">
