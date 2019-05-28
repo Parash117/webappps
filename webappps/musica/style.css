@@ -922,7 +922,7 @@ img {
         font-weight: 700;
         text-decoration-color: #6a6a6a; }
         .single-featured-shows .featured-shows-content .shows-text .buy-tickets-btn:hover, .single-featured-shows .featured-shows-content .shows-text .buy-tickets-btn:focus {
-          color: #bd177a; }
+          color: #000000; }
   .single-featured-shows:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
@@ -956,8 +956,8 @@ img {
     .featured-shows-slides .owl-prev:hover,
     .featured-shows-slides .owl-next:hover {
       background: #cc1573;
-      background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-      background: linear-gradient(to right, #cc1573, #5722a9);
+      background: -webkit-linear-gradient(to right, #000000, #000000);
+      background: linear-gradient(to right, #000000, #000000);
       color: #ffffff; }
   .featured-shows-slides .owl-next {
     left: auto;

@@ -114,7 +114,7 @@ padding-left: 0;
 
 <?php $i=0; foreach ($works as $work) {?>
   <div class="mySlides fade">
-  <a href="<?php echo $work['link']; ?>"><img src="../uploads/work/<?php echo $work['image']; ?>" style="width:100%; height:600px;"></a>
+  <a href="<?php echo $work['link']; ?>" target="_blank"><img src="../uploads/work/<?php echo $work['image']; ?>" style="width:100%; height:600px;"></a>
   </div>
 <?php $i++; } ?>
 
@@ -150,13 +150,13 @@ padding-left: 0;
 
                     <!-- Single Featured Shows -->
                     <div class="single-featured-shows">
-                        <img src="../img/bg-img/3.jpg" alt="">
+                        <img src="../img/service/camera.jpg" alt="">
                         <!-- Content -->
                         <div class="featured-shows-content">
                             <div class="shows-text">
                                 <h4>Camera Rental</h4>
                                 <p></p>
-                                <a href="#" class="buy-tickets-btn">See more..</a>
+                                <a href="productlist?cpid=3" class="buy-tickets-btn">See more..</a>
                             </div>
                             <div class="bg-gradients"></div>
                         </div>
@@ -164,13 +164,13 @@ padding-left: 0;
 
                     <!-- Single Featured Shows -->
                     <div class="single-featured-shows">
-                        <img src="../img/services-pic/lens.png" alt="">
+                        <img src="../img/service/lens.jpg" alt="">
                         <!-- Content -->
                         <div class="featured-shows-content">
                             <div class="shows-text">
                                 <h4>Lens Rental</h4>
                                 <p></p>
-                                <a href="#" class="buy-tickets-btn">See more..</a>
+                                <a href="productlist?cpid=5" class="buy-tickets-btn">See more..</a>
                             </div>
                             <div class="bg-gradients"></div>
                         </div>
@@ -178,7 +178,7 @@ padding-left: 0;
 
                     <!-- Single Featured Shows -->
                     <div class="single-featured-shows">
-                        <img src="../img/bg-img/2.jpg" alt="">
+                        <img src="../img/service/dubbing.jpg" alt="">
                         <!-- Content -->
                         <div class="featured-shows-content">
                             <div class="shows-text">
@@ -192,11 +192,25 @@ padding-left: 0;
 
                     <!-- Single Featured Shows -->
                     <div class="single-featured-shows">
-                        <img src="../img/services-pic/light.jpg" alt="">
+                        <img src="../img/service/light.jpg" alt="">
                         <!-- Content -->
                         <div class="featured-shows-content">
                             <div class="shows-text">
                                 <h4>Light Rentals</h4>
+                                <p></p>
+                                <a href="productlist?cpid=1" class="buy-tickets-btn">See more..</a>
+                            </div>
+                            <div class="bg-gradients"></div>
+                        </div>
+                    </div>
+
+                    <!-- Single Featured Shows -->
+                    <div class="single-featured-shows">
+                        <img src="../img/service/color.jpg" alt="">
+                        <!-- Content -->
+                        <div class="featured-shows-content">
+                            <div class="shows-text">
+                                <h4>Color Correction</h4>
                                 <p></p>
                                 <a href="#" class="buy-tickets-btn">See more..</a>
                             </div>
@@ -204,6 +218,19 @@ padding-left: 0;
                         </div>
                     </div>
 
+                    <!-- Single Featured Shows -->
+                    <div class="single-featured-shows">
+                        <img src="../img/service/editing.jpg" alt="">
+                        <!-- Content -->
+                        <div class="featured-shows-content">
+                            <div class="shows-text">
+                                <h4>Multi Suit Editing</h4>
+                                <p></p>
+                                <a href="#" class="buy-tickets-btn">See more..</a>
+                            </div>
+                            <div class="bg-gradients"></div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
