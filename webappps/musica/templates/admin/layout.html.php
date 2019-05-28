@@ -11,7 +11,7 @@
 
 		</section>
 	</header>
-
+<nav><ul><li><a href="logout">Logout</a><li></ul></nav>
 	<main class="admin" id="admin">
 
 <?php

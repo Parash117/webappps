@@ -6,8 +6,5 @@ $cover = $coverimages->findAll();
 $workimages = new Database('work');
 $works = $workimages->findAll();
 $title = 'MULTI MATTE - Films &amp; Recordings';
-$hots = new Database('hotarrival');
-$hot = $hots->findAll();
-
-$output = tampletLoader('../templates/user/homepage.html.php',['ci'=>$cover,'works'=>$works,'hots'=>$hot]);
+$output = tampletLoader('../templates/user/homepage.html.php',['ci'=>$cover,'works'=>$works]);
  ?>

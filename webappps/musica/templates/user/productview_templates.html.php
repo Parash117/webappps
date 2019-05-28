@@ -8,6 +8,23 @@ foreach($product_image as $pro){
   array_push($img, $pro['image_name']);
 }
  ?>
+ <script>
+  function order(a){
+  if(window.XMLHttpRequest){
+    xmlHTTP=new XMLHttpRequest();
+    xmlHTTP.onreadystatechange=function(){
+      if(this.readyState==4){
+        alert(this.responseText);
+      }
+    }
+    xmlHTTP.open('POST',"../ajax/addcheck.php",true);
+    var data = new FormData();
+    data.append('check',a);
+    data.append('status',true);
+    xmlHTTP.send(data);
+  }
+}
+  </script>
 <div class="blog-area mt-30 section-padding-100">
     <div class="container">
         <div class="row">
@@ -87,7 +104,7 @@ max-width: 50%;
 width: 50%;
 margin-bottom: 30px;
 text-align: center;">
-    <a href="#" class="btn musica-btn" style="margin-left:70%; width: 300px;text-align:center;">View Details</a>
+    <a href="rent" class="btn musica-btn" style="margin-left:70%; width: 300px;text-align:center;" onclick="order(<?php  echo $product['pid']; ?>)">Order</a>
 </div>
 </div>
 
