@@ -48,8 +48,6 @@ table th {
     xmlHTTP.send(data);
   }
 }
-
-
   </script>
 <div class="breadcumb-area bg-img bg-overlay2" style="background-image: url(); height: 50px;">
 <div class="bradcumbContent">
