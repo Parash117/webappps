@@ -35,7 +35,7 @@ foreach($product_image as $pro){
                     <div class="single-blog-post mb-100 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Post Thumb -->
                         <div class="blog-post-thumb mb-30">
-                            <img src="../uploads/images/<?php echo $img[1]; ?>" alt="" style="height: 600px;">
+                            <img src="../uploads/images/<?php echo $img[0]; ?>" alt="" style="height: 600px;">
                         </div>
                         <!-- Post Title -->
                         <a href="#" class="post-title"><?php  echo $product['pname']; ?></a>
