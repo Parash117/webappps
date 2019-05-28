@@ -28,7 +28,7 @@ table th {
 $table = new Table();
 $table->setHeading(['Name','link','<style="width: 10%">Image','Option']);
 foreach ($works as $row) {
-  $row['images']='<img src="../uploads/work/'.$row['image'].'" style="height:200px;width:300px;"></img>';
+  $row['images']='<img src="../../uploads/work/'.$row['image'].'" style="height:200px;width:300px;"></img>';
   unset($row['image']);
   $row['delete']='<form method="post" action="">
   <input type="hidden" name="id" value=' . $row['work_id'] . ' />

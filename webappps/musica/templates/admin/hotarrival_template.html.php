@@ -30,7 +30,7 @@ $table->setHeading(['Date','title','<style="width: 10%">Image','Option']);
 foreach ($hot as $row) {
   $row['titles']=$row['title'];
 unset($row['title']);
-  $row['images']='<img src="../uploads/hotarrivals/'.$row['image'].'" style="height:200px;width:300px;"></img>';
+  $row['images']='<img src="../../uploads/hotarrivals/'.$row['image'].'" style="height:200px;width:300px;"></img>';
   unset($row['image']);
   $row['delete']='<form method="post" action="">
   <input type="hidden" name="id" value=' . $row['haid'] . ' />

@@ -6,5 +6,5 @@ if(isset($_POST['delete'])){
 }
 $products=$productTable->findAll();
 $title="Products";
-$output=tampletLoader('../templates/admin/product_template.html.php',['products'=>$products]);
+$output=tampletLoader('../../templates/admin/product_template.html.php',['products'=>$products]);
  ?>
