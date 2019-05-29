@@ -12,6 +12,31 @@ img {vertical-align: middle;}
 padding-left: 0;
 }
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -52,7 +77,7 @@ padding-left: 0;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.0s;
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
@@ -67,7 +92,7 @@ padding-left: 0;
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.prev, .next,.text {font-size: 11px}
 }
 </style>
 
@@ -114,11 +139,12 @@ padding-left: 0;
 
 <?php $i=0; foreach ($works as $work) {?>
   <div class="mySlides fade">
-  <a href="<?php echo $work['link']; ?>" target="_blank"><img src="../uploads/work/<?php echo $work['image']; ?>" style="width:100%; height:600px;"></a>
+  <a href="<?php echo $work['link']; ?>" target="_blank"><img src="../uploads/work/<?php echo $work['image']; ?>" style="width:100%; height:60%;"></a>
   </div>
 <?php $i++; } ?>
 
-
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
 <br>
@@ -239,8 +265,16 @@ padding-left: 0;
 </div>
 <!-- ##### Featured Shows Area End ##### -->
 <script>
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 function showSlides() {
   var i;
@@ -256,6 +290,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
 </script>

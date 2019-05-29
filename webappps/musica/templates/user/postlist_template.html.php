@@ -30,17 +30,15 @@
                     <!-- Single Upcoming Shows -->
                     <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                         <div class="shows-date">
-                            <h2> <span></span></h2>
+                            <h2>1 <span></span></h2>
                         </div>
                         <div class="shows-desc d-flex align-items-center">
                             <div class="shows-img">
-                                <img src="../img/services-pic/red_cam.png" alt="">
+                                <img src="../img/services-pic/color-icon.jpg" alt="">
                             </div>
                             <div class="shows-name">
-                                <h6>Canera &amp; Lens Rental</h6>
-                                <p>RED EPIC DRAGON, RED EPIC-X Cameras Ultra Primes, T 1.9* - 2 sets (16, 24, 32, 50, 85)
-Zeiss CP2 High Speed Multiple sets (15,18,21, 25, 35, 50, 85,135)
-Multiple sets Wide angle 11-16mm Lens</p>
+                                <h6>Color Correction</h6>
+                                <p></p>
                             </div>
                         </div>
                         <div class="shows-location">
@@ -50,24 +48,22 @@ Multiple sets Wide angle 11-16mm Lens</p>
                             <p></p>
                         </div>
                         <div class="buy-tickets">
-                            <a href="product_category?ptype1=3&ptype2=5" class="btn musica-btn">View Details</a>
+                            <a href="color" class="btn musica-btn">View Details</a>
                         </div>
                     </div>
-
-
 
                     <!-- Single Upcoming Shows -->
                     <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                         <div class="shows-date">
-                            <h2><span></span></h2>
+                            <h2>2<span></span></h2>
                         </div>
                         <div class="shows-desc d-flex align-items-center">
                             <div class="shows-img">
-                                <img src="../img/services-pic/light.jpg" alt="">
+                                <img src="../img/services-pic/edit.png" alt="">
                             </div>
                             <div class="shows-name">
-                                <h6>Lights &amp; Grips</h6>
-                                <p>Arri Sun 25/40, Par 1.8, Mf 2000, Panel, C-stand, 3 Riser stand, Scremer and all the latest equipments and lights. </p>
+                                <h6>Multi Editing Suit</h6>
+                                <p></p>
                             </div>
                         </div>
                         <div class="shows-location">
@@ -77,22 +73,23 @@ Multiple sets Wide angle 11-16mm Lens</p>
                             <p></p>
                         </div>
                         <div class="buy-tickets">
-                            <a href="product_category?ptype1=1&ptype2=2" class="btn musica-btn">View Details</a>
+                            <a href="multiedit" class="btn musica-btn">View Details</a>
                         </div>
                     </div>
+
 
                     <!-- Single Upcoming Shows -->
                     <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                         <div class="shows-date">
-                            <h2> <span></span></h2>
+                            <h2>2<span></span></h2>
                         </div>
                         <div class="shows-desc d-flex align-items-center">
                             <div class="shows-img">
                                 <img src="../img/bg-img/s4.jpg" alt="">
                             </div>
                             <div class="shows-name">
-                                <h6>Post Production</h6>
-                                <p>Dubbing, Color Correction, Multi Editing Suit </p>
+                                <h6>Dubbing In 5.1CH</h6>
+                                <p></p>
                             </div>
                         </div>
                         <div class="shows-location">
@@ -102,44 +99,15 @@ Multiple sets Wide angle 11-16mm Lens</p>
                             <p></p>
                         </div>
                         <div class="buy-tickets">
-                            <a href="postproduction" class="btn musica-btn">View Details</a>
+                            <a href="dubbing" class="btn musica-btn">View Details</a>
                         </div>
                     </div>
 
-<!-- ##### Upcoming Shows Area End ##### -->
-<div class="col-12" style="margin-top: 150px; padding-left: 35%; height:230px;">
-                <!-- Loaders Area Start -->
-                <div class="our-skills-area">
-                    <div class="row">
-
-                        <!-- Single Skills Area -->
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="single-skils-area mb-100">
-                                <div id="circle" class="circle" data-value="0.90">
-                                    <div class="skills-text">
-                                        <span>90%</span>
-                                    </div>
-                                </div>
-                                <h5>Our Skill Rating</h5>
-                                <p></p>
-                            </div>
-                        </div>
-
-                        <!-- Single Skills Area -->
-                        <div class="col-12 col-sm-6 col-lg-3">
-                            <div class="single-skils-area mb-100">
-                                <div id="circle2" class="circle" data-value="0.80">
-                                    <div class="skills-text">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                                <h5>Our Equipments</h5>
-                                <p></p>
-                            </div>
-                        </div>
 
 
-
-                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Upcoming Shows Area End ##### -->

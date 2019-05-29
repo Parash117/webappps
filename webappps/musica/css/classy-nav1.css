@@ -123,9 +123,11 @@ img {
     font-size: 14px;
     line-height: 34px; }
   .classynav ul li .megamenu li a {
-    padding: 0 12px; }
+    padding: 0 12px;
+    position: relative; }
   .classynav ul li div.single-mega a {
     height: auto;
+    position: relative;
     line-height: 1; }
 
 /* Down Arrow Icon for Megamenu */
@@ -186,7 +188,7 @@ img {
 /* Dropdown Toggle */
 .dd-trigger {
   position: absolute;
-  width: 100%;
+  width: 25%;
   height: 100%;
   top: 0;
   left: 0;
@@ -259,12 +261,14 @@ img {
       top: -8px; }
 
 .classynav ul li .megamenu {
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0;
-  top: 100%;
+  top: 10%;
+  margin-top: -25px;
   background-color: #ffffff;
-  z-index: 200;
+  z-index: 100;
+
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); }
   .classynav ul li .megamenu .single-mega.cn-col-5 {
     width: 20%;
@@ -277,7 +281,7 @@ img {
     width: 25%;
     float: left;
     padding: 15px;
-    border-right: 1px solid #f2f4f8; }
+    border-right: 3px solid #f2f4f8; }
     .classynav ul li .megamenu .single-mega.cn-col-4:last-of-type {
       border-right: none; }
   .classynav ul li .megamenu .single-mega.cn-col-3 {
@@ -334,7 +338,7 @@ img {
   -ms-grid-row-align: center;
   align-items: center; }
 .breakpoint-off .classynav ul li .dropdown {
-  width: 210px;
+  width: 250px;
   position: absolute;
   background-color: #ffffff;
   top: 120%;
@@ -349,7 +353,7 @@ img {
   padding: 10px 0; }
   .breakpoint-off .classynav ul li .dropdown li .dropdown {
     top: 10px;
-    left: 210px;
+    left: 250px;
     z-index: 200;
     opacity: 0;
     visibility: hidden; }
@@ -392,7 +396,23 @@ img {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms; }
-.breakpoint-off .classynav ul li.megamenu-item:hover .megamenu, .breakpoint-off .classynav ul li.megamenu-item:focus .megamenu {
+.breakpoint-off .classynav ul li.megamenu-item:hover .megamenu{
+  opacity: 1;
+  visibility: visible;
+  top: 100%; }
+.breakpoint-off .classynav ul li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li:hover .dropdown,
+.breakpoint-off .classynav ul li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li .dropdown li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: -10px; },
+.breakpoint-off .classynav ul li.megamenu-item:focus .megamenu {
   top: 100%;
   visibility: visible;
   opacity: 1; }
